@@ -130,8 +130,10 @@ class Simulation:
 
 if __name__=="__main__":
     pata = Extremidad()
-    z = -randint(3,10)
-    inicio = [float(randint(4,10)),-float(randint(3,10)),float(z)]
+    #z = -randint(3,10)
+    #inicio = [float(randint(4,10)),-float(randint(3,10)),float(z)]
+    z = -7
+    inicio = [5,0,z]
     angulo = (-180+20)*pi/180
     distancia = 10
     final = [0,0,0]
@@ -223,9 +225,10 @@ if __name__=="__main__":
 #####        except:
 #####            None
     print(error)
-    sim.ax.scatter(inicio[0],inicio[1],inicio[2],color="blue")
-    sim.ax.scatter(final[0],final[1],final[2],color="black")
+    sim.ax.scatter(inicio[0],inicio[1],inicio[2],color="red")
+    sim.ax.scatter(final[0],final[1],final[2],color="blue")
     sim.ax.set_xlabel('X Label')
     sim.ax.set_ylabel('Y Label')
     sim.ax.set_zlabel('Z Label')
+    ## el cero para el angulo[0] sería a lo largo del eje y
     plt.show()

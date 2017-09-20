@@ -37,6 +37,9 @@ class Extremidad:
     def InverseKinematics(self,vector):
         # Le entra un vector <vector> posición de la punta de la extremidad.
         # Retorna un vector <angulos> con los ángulos que debería tomar el servo.
+        # El angulo[0] sería el del servo más próximo al cuerpo del hexápodo.
+        #    angulo[1] sería el siguiente y angulo[2] el último.
+        # Los ángulos están en radianes.
         # c, B, h, C1 y C2 son creadas para realizar los cálculos
         [x,y,z] = vector
         angulos = [0,0,0]

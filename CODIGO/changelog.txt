@@ -1,3 +1,7 @@
-*Archivo:
-	+Clase/función:
-		-
+*Archivo: maestro
+	+Clase/función: Controller
+		- Se agregó el archivo maestro con la clase Controller para comunicar python con el hexápodo.
+
+*Archivo: maestro test
+	+Clase/función: -
+		- En este archivo se están haciendo las pruebas para determinar los parámetros del controlador de servos.
